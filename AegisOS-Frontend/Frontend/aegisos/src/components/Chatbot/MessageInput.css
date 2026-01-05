@@ -1,0 +1,71 @@
+
+.message-input-form {
+  position: fixed;
+  bottom: 3.5rem;
+  left: 55%;
+  transform: translateX(-50%);
+  width: calc(100% - 4rem);
+  max-width: 700px;
+  padding: 0 1rem;
+  z-index: 3;
+}
+
+.message-input-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(19, 22, 27, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid #4b5563;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message-input {
+  overflow: auto;
+  resize: none;
+  flex-grow: 1;
+  background-color: transparent;
+  color: #d1d5db;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+.message-input::-webkit-scrollbar {
+  width: 0px; 
+  height: 0px; 
+}
+
+.message-input::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+.message-input::-webkit-scrollbar-thumb {
+  background: transparent; 
+}
+
+.send-button,
+.stop-button {
+  margin-left: 0.5rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.send-button:hover {
+  background-color: #2563eb;
+}
+
+.stop-button {
+  background-color: #ef4444;
+}
+
+.stop-button:hover {
+  background-color: #dc2626;
+}
