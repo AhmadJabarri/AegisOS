@@ -1,0 +1,117 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+.dashboard-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    align-self: self-start;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.agent-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.agent-card:nth-child(7) {
+    margin-left: 12rem;
+}
+
+.agent-card:nth-child(8) {
+    margin-right: 12rem;
+}
+
+.agent-card {
+    display: flex;
+    gap: 7%;
+    padding: 1.5rem;
+    margin-right: 2rem;
+    border-radius: 12px;
+    width: 390px;
+    min-height: 15rem;
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #11111129;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.agent-card:first-child {
+    padding: 1rem;
+}
+
+
+.agent-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.agent-icon {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agent-icon img {
+    width: 150px;
+    height: 150px;
+    max-width: 200px;
+    max-height: 200px;
+    /* object-fit: contain; */
+    transition: transform 0.3s ease;
+}
+
+.agent-icon img:hover {
+    transform: scale(1.18);
+}
+
+.agent-info {
+    color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    flex-grow: 1;
+}
+
+.agent-info h3 {
+    font-weight: bold;
+}
+
+.agent-info h4 {
+    font-size: 1.4rem;
+}
+
+.agent-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #f0f0f0;
+}
+
+.agent-card:nth-child(8) .agent-name {
+    font-size: 1.4rem;
+}
+
+.agent-card:nth-child(8) .agent-icon img {
+    width: 130px;
+    height: 130px;
+}
+

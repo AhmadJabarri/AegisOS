@@ -1,0 +1,45 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
+import aegisosLogo from "../../assets/icons/aegisos-logo.svg";
+import aegisosButtonLogo from "../../assets/icons/aegisos-button.png";
+import dashboardLogo from "../../assets/icons/home.png";
+import settingsLogo from "../../assets/icons/settings.svg";
+import tasksLogo from "../../assets/icons/tasksLogo.svg";
+import "./Sidebar.css";
+
+const Sidebar = () => {
+  return (
+    <div className="sidebar">
+      <h1 className="sidebar-title">
+        <img src={aegisosLogo} alt="Aegisos Icon" className="logo" />
+        <span>Aegisos</span>
+      </h1>
+
+      <nav className="nav-links">
+        <NavLink to="/dashboard" className="sidebar-link">
+          <img src={dashboardLogo} alt="Dashboard Icon" />
+          <span>Dashboard</span>
+        </NavLink>
+        <NavLink to="/" className="sidebar-link">
+          <img src={aegisosButtonLogo} alt="Aegisos Button Icon" />
+          <span>Aegisos</span>
+        </NavLink>
+        <NavLink to="/tasks" className="sidebar-link">
+          <img src={tasksLogo} alt="Tasks Icon" />
+          <span>Tasks</span>
+        </NavLink>
+        <NavLink to="/settings" className="sidebar-link">
+          <img src={settingsLogo} alt="Settings Icon" />
+          <span>Settings</span>
+        </NavLink>
+      </nav>
+
+      <p className="sidebar-footer">
+        All rights go to Aegisos
+        <br />
+      </p>
+    </div>
+  );
+};
+
+export default Sidebar;
